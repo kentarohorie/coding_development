@@ -1,0 +1,38 @@
+<%= require('html-loader!../components/header.html').default %>
+
+<div class="black"> <!-- setting by tailwind.config.js -->
+  sample page
+</div>
+
+<img src=<%= require("../images/dummy.png") %>>
+
+<br>
+
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
+
+<table class="border-collapse border-2 border-gray-500">
+  <thead>
+    <tr>
+      <th class="border border-gray-400 px-4 py-2 text-gray-800">State</th>
+      <th class="border border-gray-400 px-4 py-2 text-gray-800">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-400 px-4 py-2">Indiana</td>
+      <td class="border border-gray-400 px-4 py-2">Indianapolis</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 px-4 py-2">Ohio</td>
+      <td class="border border-gray-400 px-4 py-2">Columbus</td>
+    </tr>
+    <tr>
+      <td class="border border-gray-400 px-4 py-2">Michigan</td>
+      <td class="border border-gray-400 px-4 py-2">Detroit</td>
+    </tr>
+  </tbody>
+</table>
+
+<%= require('html-loader!../components/footer.html').default %>
