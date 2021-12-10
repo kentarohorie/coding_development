@@ -1,10 +1,10 @@
-<%= require('html-loader!../components/header.html').default %>
+{{>../components/header htmlWebpackPlugin}}
 
 <div class="black"> <!-- setting by tailwind.config.js -->
   sample page
 </div>
 
-<img src=<%= require("../images/dummy.png") %>>
+<img src="../images/dummy.png") >
 
 <br>
 
@@ -35,4 +35,4 @@
   </tbody>
 </table>
 
-<%= require('html-loader!../components/footer.html').default %>
+{{>../components/footer htmlWebpackPlugin}}

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const plugins = [
   new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'pages', 'sample_page.html'),
+    template: path.resolve(__dirname, 'src', 'pages', 'sample_page.hbs'),
     filename: 'pages/sample_page.html'
   })
 ]
@@ -33,6 +33,13 @@ module.exports = {
         use: [
           'image-webpack-loader'
         ]
+      },
+      {
+        test: /\.hbs$/i,
+        loader: 'handlebars-loader',
+        options: {
+          inlineRequires: '/images/'
+        }
       }
     ]
   },
