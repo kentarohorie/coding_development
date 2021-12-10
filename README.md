@@ -5,7 +5,6 @@
 ```bash
 # setup
 yarn
-yarn build:dev
 
 # start development
 yarn build:dev
